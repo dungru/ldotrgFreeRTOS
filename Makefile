@@ -131,7 +131,7 @@ flash:
 		-c "flash write_image erase $(BIN_IMAGE) 0x8000000" \
 		-c "reset run" -c shutdown || \
 	st-flash write $(BIN_IMAGE) 0x8000000
-
+#clean stage
 .PHONY: clean
 clean:
 	rm -rf $(EXECUTABLE)
